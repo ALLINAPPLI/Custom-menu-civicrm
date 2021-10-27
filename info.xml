@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<extension key="custommenu" type="module">
+  <file>custommenu</file>
+  <name>Custom Menu</name>
+  <description>Add redirection to profil civicrm</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Renaud fradin</author>
+    <email>dev@all-in-appli.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://smc-cse.fr/</url>
+    <url desc="Documentation">https://smc-cse.fr/</url>
+    <url desc="Support">https://smc-cse.fr/</url>
+  </urls>
+  <releaseDate>2021-10-27</releaseDate>
+  <version>1.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Custommenu</namespace>
+  </civix>
+</extension>

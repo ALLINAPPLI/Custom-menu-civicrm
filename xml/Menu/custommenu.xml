@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/custommenu/contactrecord</path>
+    <page_callback>CRM_Custommenu_Page_PageProfile</page_callback>
+    <title>PageProfile</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
