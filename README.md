@@ -13,3 +13,5 @@ Separator : Aucun
 Autorisation : CiviCRM: Accéder à l'interface d'administration de CiviCRM et à l'API
 
 ![Screenshot](/images/Capture2.png)
+
+Fait apparaitre le Menu "Mes démarches".

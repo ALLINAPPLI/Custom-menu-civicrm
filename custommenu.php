@@ -159,14 +159,45 @@ function custommenu_civicrm_themes(&$themes) {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_navigationMenu
  */
-//function custommenu_civicrm_navigationMenu(&$menu) {
-//  _custommenu_civix_insert_navigation_menu($menu, 'Mailings', array(
-//    'label' => E::ts('New subliminal message'),
-//    'name' => 'mailing_subliminal_message',
-//    'url' => 'civicrm/mailing/subliminal',
-//    'permission' => 'access CiviMail',
-//    'operator' => 'OR',
-//    'separator' => 0,
-//  ));
-//  _custommenu_civix_navigationMenu($menu);
-//}
+function  custommenu_civicrm_navigationMenu(&$menu) {
+  _custommenu_civix_insert_navigation_menu($menu, '', [
+    'label' => 'Mes démarches',
+    'name' => 'Mes_démarches',
+    'url' => '',
+    'permission' => 'Access the CiviCRM administration interface and API',
+    'attr' => ['target' => '_blank'],
+    'icon' => 'crm-i fa-list-ul'
+  ]);
+
+  _custommenu_civix_insert_navigation_menu($menu, 'Mes_démarches', [
+    'label' => 'Déclaration de licence',
+    'name' => 'Déclaration de licence',
+    'url' => 'https://ffmns.gestad.net/licence/',
+    'permission' => 'Access the CiviCRM administration interface and API',
+    'attr' => ['target' => '_blank'],
+  ]);
+
+  _custommenu_civix_insert_navigation_menu($menu, 'Mes_démarches', [
+    'label' => 'Ajouter une formation',
+    'name' => 'Ajouter une formation',
+    'url' => 'https://ffmns.gestad.net/wp-admin/admin.php?page=CiviCRM&q=civicrm%2Fevent%2Fadd&reset=1&action=add',
+    'permission' => 'Access the CiviCRM administration interface and API',
+    'attr' => ['target' => '_blank'],
+  ]);
+
+  _custommenu_civix_insert_navigation_menu($menu, 'Mes_démarches', [
+    'label' => 'Renouvellement d affiliation fédérale',
+    'name' => 'Renouvellement d affiliation fédérale',
+    'url' => 'https://ffmns.gestad.net/re-affiliation/',
+    'permission' => 'Access the CiviCRM administration interface and API',
+    'attr' => ['target' => '_blank'],
+  ]);
+
+  _custommenu_civix_insert_navigation_menu($menu, 'Mes_démarches', [
+    'label' => 'Demande agrément CFD',
+    'name' => 'Demande agrément CFD',
+    'url' => 'https://ffmns.gestad.net/agrement/',
+    'permission' => 'Access the CiviCRM administration interface and API',
+    'attr' => ['target' => '_blank'],
+  ]);
+}
